@@ -1,0 +1,150 @@
+def add(a,b):
+    return(a+b)
+print(add(10,20))
+
+def sub(a,b):
+    return(a-b)
+print(sub(10,20))
+
+def sub(a,b):
+    result=a-b
+    return result
+print(sub(50,20))
+
+abc=999
+def f1():
+    print(abc+100)
+    return ""
+
+
+def f2():
+    global abc
+    abc=900
+    print(abc+800)
+    return ""
+
+def f3():
+    print(abc)
+    return ""
+
+print(f1())
+print(f2())
+print(f3())
+
+def outer():
+    print("inside")
+    def inner():
+        return "inside"
+        print("hi")
+    return "outer", inner()
+
+print(outer())
+
+def outer(a,b):
+    def inner(c,d):
+        return c-d+a+b
+        print("inner func")
+    return 100, inner(10,20)
+
+print(outer(5,15))
+
+
+# def outer():
+#     inner()
+#     print("inside outer")
+#     def inner():
+#         print("inside inner")
+#         return"inner executed"
+#     return ("outer func")
+
+# outer()
+
+x=10
+def wolf1():
+    x=25
+def wolf2():
+    x=50
+wolf1()
+print(x)
+
+
+x=10
+def wolf1():
+    x=25
+    print(x)
+def wolf2():
+    x=50
+wolf1()
+wolf2()
+
+x=10
+def wolf1():
+    x=25
+    print(x)
+def wolf2():
+    x=50
+    print(x)
+
+wolf2()
+wolf1()
+print(x)
+
+
+def wolf1():
+    x=25
+    print(x)
+def wolf2():
+    x=50
+    print(x)
+
+wolf2()
+
+x=31
+def wolf1():
+    x=26
+def wolf2():
+        print(x)
+
+wolf1()
+print(x)
+
+import math
+# print(help(math))
+print(math.factorial(5))
+print(math.sqrt(5))
+print(math.sin(90))
+print(math.ceil(5.4))
+print(math.floor(5.2))
+print(math.pi)
+print(math.e)
+
+import random
+print(random.random())
+
+for i in  range(5):
+    print(random.random())
+
+
+for i in  range(3):
+    print("randint", random.randint(1000,9999))
+
+for i in  range(6):
+    print("randint", random.randint(1,6))
+
+for i in  range(6):
+    print("uniform", random.uniform(1,6))
+
+
+import dict
+# print(help(dict))
+# print(dict())
+
+
+
+
+
+
+
+
+
+
